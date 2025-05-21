@@ -1,0 +1,214 @@
+/* Use a friendly, inviting font and set a light teal background for the whole page */
+body {
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa; /* light teal */
+}
+
+/* Style the Call-to-Action (CTA) banner */
+.cta-banner {
+  background-image: url('img/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 150, 136, 0.6); /* teal overlay */
+  background-blend-mode: lighten;
+  color: #0d223a; /* deep blue text for contrast */
+  padding: 30px 20px 60px 20px;
+  text-align: center;
+  min-height: 450px;
+}
+
+/* Large, bold heading inside the banner */
+.cta-banner h1 {
+  font-size: 2.5em;
+  margin-bottom: 32px;
+  margin-top: 0;
+  color: #0097a7; /* blue accent */
+}
+
+/* Description text inside the banner */
+.cta-banner p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  margin-top: 0;
+  color: #00695c; /* dark teal */
+}
+
+/* Style the call-to-action link as a button */
+.cta-button {
+  display: inline-block;
+  background-color: #00bcd4; /* bright teal button */
+  color: #e0f7fa; /* light teal text */
+  padding: 16px 36px;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 150, 136, 0.15);
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+
+/* Change button color when hovered */
+.cta-button:hover {
+  background-color: #1976d2; /* blue accent on hover */
+  color: #e0f7fa; /* light teal text */
+}
+
+/* Simple site header styling */
+.site-header {
+  background-color: #0097a7; /* blue accent */
+  color: #e0f7fa; /* light teal text */
+  padding: 18px 0;
+  text-align: center;
+}
+
+/* Style for the site name in the header */
+.site-header h2 {
+  margin: 0;
+  font-size: 1.7em;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  color: #00695c; /* dark teal for contrast */
+}
+
+/* Info section below the banner */
+.info-section {
+  max-width: 950px; /* increased from 800px */
+  margin: 40px auto 0 auto;
+  padding: 24px 12px;
+  background-color: #b2ebf2; /* very light teal */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 150, 136, 0.08);
+  text-align: center;
+  border: 2px solid #000000; /* add solid black border */
+}
+
+/* Image and text side by side using inline-block */
+.info-image {
+  width: 48%;
+  max-width: 300px;
+  vertical-align: top;
+  display: inline-block;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Info text column */
+.info-text {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-left: 2%;
+  color: #0d223a; /* deep blue text */
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 700px) {
+  .info-image,
+  .info-text {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+  .info-section {
+    padding: 16px 4px;
+  }
+}
+
+/* Event section styling */
+.event-section {
+  max-width: 850px; /* increased from 700px */
+  margin: 36px auto 0 auto;
+  padding: 22px 14px;
+  background-color: #4dd0e1; /* soft teal */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 150, 136, 0.07);
+  text-align: center;
+  border: 2px solid #000000; /* add solid black border */
+}
+
+.event-section h3 {
+  margin-top: 0;
+  color: #1976d2; /* blue accent */
+  font-size: 1.5em;
+}
+
+.event-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  margin: 18px auto;
+  max-width: 350px;
+}
+
+.event-section li {
+  margin-bottom: 8px;
+  color: #00695c; /* dark teal */
+}
+
+/* Volunteer section styling */
+.volunteer-section {
+  max-width: 850px; /* increased from 700px */
+  margin: 36px auto 0 auto;
+  padding: 22px 14px;
+  background-color: #81d4fa; /* light blue, unused in other sections */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 150, 136, 0.07);
+  text-align: center;
+  border: 2px solid #000000; /* add solid black border */
+}
+
+.volunteer-section h3 {
+  margin-top: 0;
+  color: #0097a7; /* blue accent */
+  font-size: 1.5em;
+}
+
+.volunteer-section p {
+  color: #00695c; /* dark teal */
+  font-size: 1.1em;
+  margin-bottom: 16px;
+}
+
+/* Foster fail section styling */
+.foster-fail-section {
+  max-width: 850px; /* increased from 700px */
+  margin: 36px auto 0 auto;
+  padding: 22px 14px;
+  background-color: #e1f5fe; /* pale blue, fits theme and unused elsewhere */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 150, 136, 0.07);
+  text-align: center;
+  border: 2px solid #000000; /* solid black border */
+}
+
+.foster-fail-section h3 {
+  margin-top: 0;
+  color: #1976d2; /* blue accent */
+  font-size: 1.5em;
+}
+
+.foster-fail-section p {
+  color: #00695c; /* dark teal */
+  font-size: 1.1em;
+  margin-bottom: 16px;
+}
+
+/* Simple footer styling */
+.site-footer {
+  background-color: #0097a7; /* blue accent */
+  color: #e0f7fa; /* light teal text */
+  text-align: center;
+  padding: 18px 8px;
+  margin-top: 40px;
+  font-size: 1em;
+}
+
+.site-footer p {
+  margin: 0;
+}
